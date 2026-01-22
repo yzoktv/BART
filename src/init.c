@@ -8,6 +8,8 @@ extern SEXP cpbart(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, S
 extern SEXP clbart(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 /* extern SEXP cmbart(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP); */
 extern SEXP cpwbart(SEXP, SEXP, SEXP);
+extern SEXP C_cpwbart_single(SEXP, SEXP, SEXP, SEXP); // niuniu addition
+extern SEXP C_build_tmat_from_treedraws(SEXP); // also niuniu 
 extern SEXP cwbart(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 extern SEXP cgbart(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 /*extern SEXP cgbmm(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);*/
@@ -38,6 +40,9 @@ static const R_CallMethodDef CallEntries[] = {
 /*  {"cdpgbart",(DL_FUNC) &cdpgbart,35},
     {"cdpmbart",(DL_FUNC) &cdpmbart,25},
     {"cdpmwbart",(DL_FUNC) &cdpmwbart,27}, */
+    {"C_cpwbart_single", (DL_FUNC) &C_cpwbart_single, 4}, // niuniu addition
+    {"C_build_tmat_from_treedraws", (DL_FUNC) &C_build_tmat_from_treedraws, 1}, //also niuniu
+    
     {NULL, NULL, 0}
 };
 

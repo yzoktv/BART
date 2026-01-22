@@ -1,7 +1,7 @@
 Package: BART
 Type: Package
 Title: Bayesian Additive Regression Trees
-Version: 2.9.9
+Version: 2.9.90067
 Date: 2024-06-21
 Authors@R: c(person('Robert', 'McCulloch', role='aut'),
   person('Rodney', 'Sparapani', role=c('aut', 'cre'), 

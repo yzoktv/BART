@@ -44,3 +44,6 @@ S3method(predict, mbart2)
 ## export(predict.criskbart, predict.crisk2bart)
 ##S3method(predict, gbart)
 ##export(predict.gbart)
+
+export(predict_single_draw)
+export(rebuild_tmat)
